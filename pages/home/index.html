@@ -5,11 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/displays.css">
+    <link rel="stylesheet" href="/styles/texts.css">
+    <link rel="stylesheet" href="/styles/margins.css">
     <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="/assets/img/favicon.png">
     <title>Open Music</title>
   </head>
   <body>
-    <main></main>
+    <header class="container flex justify-between align-center">
+      <h1 class="title-1">open music</h1>
+      <button class="change-theme">
+        <img src="/assets/img/moon.png" alt="moon" class="dm-icon">
+      </button>
+    </header>
+
+    <main class="container">
+      <section>
+        <h3 class="title-2-bold margin-1">Gênero musical</h3>
+        <div class="container-buttons flex wrap align-center gap-1 margin-2"></div>
+        <form action="" class="form-price">
+          <div class="container-form margin-1 flex justify-between align-center">
+            <label for="price" class="label-price title-2-bold">Definir preço</label>
+            <p class="max-value title-2"></p>
+          </div>
+        </form>
+      </section>
+      <section>
+        <h3 class="title-2-bold margin-2">Albuns encontrados</h3>
+        <ul class="list-albums flex wrap justify-between"></ul>
+      </section>
+    </main>
     <script src="../../scripts/theme.js"></script>
     <script src="productsData.js"></script>
     <script src="index.js"></script>

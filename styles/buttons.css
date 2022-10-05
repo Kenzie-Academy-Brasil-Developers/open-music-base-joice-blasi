@@ -1,0 +1,40 @@
+.change-theme {
+    border-radius: var(--radius-1);
+    background-color: var(--color-grey-9);
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons-filter {
+    border-radius: var(--radius-1);
+    border: 1px solid var(--color-grey-8);
+    background-color: var(--color-grey-8);
+    height: 32px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-grey-2);
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.buttons-filter:hover {
+    border: 1px solid var(--color-grey-8);
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-8);
+}
+
+.button-buy{
+    border-radius: var(--radius-1);
+    background-color: var(--color-grey-7);
+    border: 1px solid var(--color-grey-7);
+    padding: 0 8px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.input-price {
+    width: 100%;
+}

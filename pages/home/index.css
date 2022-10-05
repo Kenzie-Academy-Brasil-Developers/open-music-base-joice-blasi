@@ -1,1 +1,22 @@
-/* Desenvolva sua estilização aqui ... */
+.album {
+    width: 308px;
+    height: 259px;
+    border-radius: var(--radius-1);
+    background-color: var(--color-grey-8);
+}
+
+.container-img {
+    width: 100%;
+    height: 43.6%;
+}
+
+.img-album {
+    border-top-right-radius: var(--radius-1);
+    border-top-left-radius: var(--radius-1);
+    width: 100%;
+    height: 100%;
+}
+
+.container-info {
+    width: 50%;
+}

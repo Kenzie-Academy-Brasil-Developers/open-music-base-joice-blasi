@@ -1,0 +1,55 @@
+.title-1 {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.89px;
+    color: var(--color-disable-fixed);
+}
+
+.title-2-bold {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+    color: var(--color-grey-1);
+}
+
+.title-2 {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    color: var(--color-grey-2);
+}
+
+.title-3-bold {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.94px;
+    color: var(--color-grey-1);
+}
+
+.title-3 {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 0;
+    color: var(--color-grey-8);
+}
+
+.title-3-grey {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 0;
+    color: var(--color-grey-2);
+}
+
+.title-4 {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.52px;
+    color: var(--color-grey-2);
+}

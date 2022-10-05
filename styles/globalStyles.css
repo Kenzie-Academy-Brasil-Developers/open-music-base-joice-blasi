@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 :root {
@@ -29,6 +30,16 @@
 
   --radius-1: 0.25rem;
   --container: 45rem;
+}
+
+.dark-mode:root {
+  --color-brand-1:#9747ff;
+  --color-grey-1: #adb5bd;
+  --color-grey-2: #868e96;
+  --color-grey-7: #2b2f33;
+  --color-grey-8: #212529;
+  --color-grey-9: #15171a;
+  --color-disable-fixed: #f8f9fa;
 }
 
 body {
