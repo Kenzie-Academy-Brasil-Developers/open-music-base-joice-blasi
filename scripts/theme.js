@@ -7,17 +7,22 @@ function changeLightDarkMode() {
     html.classList.toggle("dark-mode");
     dmIcon.classList.toggle("text-white");
   
-    const preference = localStorage.getItem('darkmode');
-    if(!preference) {
-      localStorage.setItem("darkmode", true);
-    } else{
-      localStorage.removeItem("darkmode");
-    }
-
-    if (dmIcon.classList.contains("text-white")) {
+    const preference = localStorage.getItem("darkmode");
+    if(preference === "true") {
+      localStorage.setItem("darkmode", "false");
+      html.classList.remove("dark-mode");
+      dmIcon.src = "/assets/img/moon.png";
+      dmIcon.alt = "moon";
+    } else if(preference === "false") {
+      localStorage.setItem("darkmode", "true");
+      html.classList.add("dark-mode");
+      dmIcon.classList.add("text-white");
       dmIcon.src = "/assets/img/sun.png";
       dmIcon.alt = "sun";
-    } else{
+    } else if(preference === null) {
+      localStorage.setItem("darkmode", "false");
+      html.classList.remove("dark-mode");
+      dmIcon.classList.remove("text-white");
       dmIcon.src = "/assets/img/moon.png";
       dmIcon.alt = "moon";
     }

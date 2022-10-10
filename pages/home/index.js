@@ -1,3 +1,18 @@
+const dmIcon = document.querySelector(".dm-icon");
+const html = document.querySelector("html");
+
+function checkTheme() {
+  let theme = localStorage.getItem("darkmode");
+  if(theme === null) {
+    localStorage.getItem("darkmode", "false");
+  } else if(theme === "true") {
+    html.classList.add("dark-mode");
+    dmIcon.classList.add("text-white");
+    dmIcon.src = "/assets/img/sun.png";
+    dmIcon.alt = "sun";
+  }
+}
+
 function renderGenresButtons(list) {
   const containerButtons = document.querySelector(".container-buttons");
   list.reverse().forEach((item) => {
@@ -87,3 +102,4 @@ eventFilterBtn();
 renderInput();
 renderAlbums(products);
 eventFilterInput();
+checkTheme();
